@@ -7,7 +7,7 @@ def join_nested_strings(src)
   src.each { |r|
     r.each{ |e|
       binding.pry
-      if e.class=="String"
+      if e.class==String
         reduced_string+=(e+" ")
       end
     }
