@@ -4,6 +4,10 @@ def join_nested_strings(src)
   reduced_string=""
   src.each { |r|
     r.each{ |e|
-      if e.type=="string"
-  {
+      if e.class=="String"
+        reduced_string+=e
+      end
+    }
+  }
+  reduced_string  
 end
